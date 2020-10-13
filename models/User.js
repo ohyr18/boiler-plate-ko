@@ -19,7 +19,7 @@ const userSchema = mongoose.Schema({
     maxlength:50
   },
   role:{
-    type:Number //회원, 관리자 등 권한을 숫자로 설정
+    type:Number, //회원, 관리자 등 권한을 숫자로 설정
     default:0
   },
   image:String,
@@ -33,4 +33,4 @@ const userSchema = mongoose.Schema({
 })
 const User = mongoose.model('User',userSchema)
 
-module.exports = {User}
+module.exports = { User }
